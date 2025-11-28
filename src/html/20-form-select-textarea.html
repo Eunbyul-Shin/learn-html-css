@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 (select, textarea) 요소 | Likelion Bootcamp</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>폼 (select, textarea) 요소</h1>
+    <!-- 콤보 박스 -->
+    <div>
+      <label class="sr-only" for="petSelect">반려동물</label>
+      <select id="petSelect" name="petSelect">
+        <option aria-hidden="true" value="">반려동물을 선택하세요</option>
+        <option value="dog">강아지</option>
+        <option value="cat">고양이</option>
+        <option value="hamster">햄스터</option>
+        <option value="spider">거미</option>
+      </select>
+    </div>
+
+    <!-- 리스트 박스 -->
+
+    <div>
+      <label class="sr-only" for="petSelect-2">반려동물</label>
+      <select size="10" id="petSelect-2" multiple name="petSelect-2">
+        <option aria-hidden="true" value="">반려동물을 선택하세요</option>
+        <option value="dog">강아지</option>
+        <option value="cat">고양이</option>
+        <option value="hamster">햄스터</option>
+        <option value="spider">거미</option>
+      </select>
+    </div>
+
+    <!-- 여러 줄 글상자 -->
+    <!-- sr-only 쓰면 이름 안 보임 -->
+    <label for="memo" class="sr_only">메모</label>
+    <textarea name="memo" id="memo" cols="30" rows="10"> </textarea>
+  </body>
+</html>
