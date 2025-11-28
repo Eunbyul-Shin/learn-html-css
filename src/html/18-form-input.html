@@ -13,7 +13,6 @@
     <form action="">
       <fieldset>
         <legend>필수 입력</legend>
-
         <div>
           <label for="">이름</label>
           <input type="text" id="userName" />
@@ -25,6 +24,75 @@
           </label>
         </div>
       </fieldset>
+    </form>
+    <hr />
+    <form action="" method="">
+      <!-- 텍스트 입력 서식 -->
+      <div>
+        <label for="userID">아이디</label>
+        <!-- label은 이름표 placeholder는 입력값에 대한 힌트 -->
+        <input type="text" id="userID" placeholder="아이디 or 이메일" />
+      </div>
+
+      <!-- 비밀번호 입력 서식 -->
+      <div>
+        <label for="userPwd">비밀번호</label>
+        <input type="password" id="userPwd" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" placeholder="최소 8자리 이상" />
+      </div>
+
+      <!-- 이메일 입력 서식 -->
+      <div>
+        <label for="userEmail">이메일</label>
+        <input type="email" id="userEmail" placeholder="예)guest@Likelion.nets" />
+      </div>
+
+      <!-- 전화번호 입력 서식 -->
+      <div>
+        <label for="userphone">전화번호</label>
+        <input type="tel" id="userphone" pattern="[0-9]{10}" placeholder="예)010-0000-0000" />
+      </div>
+
+      <!-- URL 입력 서식 -->
+      <div>
+        <label for="userSns">SNS</label>
+        <input type="url" id="userSns" placeholder="예)https://www.instagram.com/likelion.bootcamp/" />
+      </div>
+
+      <!-- 검색어 입력 서식 -->
+      <div>
+        <label for="search">검색어</label>
+        <input type="search" id="search" placeholder="검색어 예)멋쟁이 사자처럼" />
+      </div>
+      <!-- 라디오 입력 서식 -->
+      <div>
+        <!-- 같은 그룹으로 만들어주고 싶으면 name 활용 -->
+        <input type="radio" id="male" name="gender" value="남자" />
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" value="여자" />
+        <label for="male">여자</label>
+      </div>
+
+      <!-- URL 입력 서식 -->
+      <div>
+        <input type="checkbox" id="html" value="마크업" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" value="스타일" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" value="스크립트" />
+        <label for="js">JS</label>
+      </div>
+
+      <!-- 파일 첨부 서식 -->
+      <div>
+        <input type="file" />
+      </div>
+
+      <!-- 전송 버튼 -->
+      <input type="submit" value="전송" />
+      <!-- 기본이 text 버튼으로 사용하기 위해서는 타입 지정 필요 -->
+      <!-- <button type="submit">제출</button> -->
+      <input type="reset" value="초기화" />
+      <input type="button" value="click" />
     </form>
   </body>
 </html>
