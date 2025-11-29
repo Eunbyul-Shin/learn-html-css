@@ -1,0 +1,8 @@
+.circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  /* 이미지 원형으로 만들기 */
+
+  object-fit: cover;
+}
